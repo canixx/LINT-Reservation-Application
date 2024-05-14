@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ee2bdb7296e44b69b651929bea062d19" Name="Diagram1">
+        <EntityTypeShape EntityType="HayyamDBModel.sysdiagram" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="HayyamDBModel.tbl_bill" Width="1.5" PointX="3" PointY="4.875" />
+        <EntityTypeShape EntityType="HayyamDBModel.tbl_bill_payment" Width="1.5" PointX="5.25" PointY="4.625" />
+        <EntityTypeShape EntityType="HayyamDBModel.tbl_categories" Width="1.5" PointX="3.75" PointY="19.5" />
+        <EntityTypeShape EntityType="HayyamDBModel.tbl_customers" Width="1.5" PointX="3" PointY="15" />
+        <EntityTypeShape EntityType="HayyamDBModel.tbl_employee_actions" Width="1.5" PointX="3" PointY="22.25" />
+        <EntityTypeShape EntityType="HayyamDBModel.tbl_employee_dutys" Width="1.5" PointX="1.5" PointY="12.5" />
+        <EntityTypeShape EntityType="HayyamDBModel.tbl_employees" Width="1.5" PointX="0.75" PointY="0.875" />
+        <EntityTypeShape EntityType="HayyamDBModel.tbl_payment_type" Width="1.5" PointX="3" PointY="1.625" />
+        <EntityTypeShape EntityType="HayyamDBModel.tbl_products" Width="1.5" PointX="6" PointY="19.125" />
+        <EntityTypeShape EntityType="HayyamDBModel.tbl_reservations" Width="1.5" PointX="3" PointY="8.375" />
+        <EntityTypeShape EntityType="HayyamDBModel.tbl_sales" Width="1.5" PointX="8.25" PointY="5.125" />
+        <EntityTypeShape EntityType="HayyamDBModel.tbl_tables" Width="1.5" PointX="0.75" PointY="5.25" />
+        <AssociationConnector Association="HayyamDBModel.FK_tbl_adisyon_tbl_masalar" />
+        <AssociationConnector Association="HayyamDBModel.FK_tbl_adisyon_tbl_personeller" />
+        <AssociationConnector Association="HayyamDBModel.FK_tbl_hesapOdemeleri_tbl_adisyon" />
+        <AssociationConnector Association="HayyamDBModel.FK_tbl_satislar_tbl_adisyon" />
+        <AssociationConnector Association="HayyamDBModel.FK_tbl_hesapOdemeleri_tbl_musteriler" />
+        <AssociationConnector Association="HayyamDBModel.FK_tbl_hesapOdemeleri_tbl_odemeturleri" />
+        <AssociationConnector Association="HayyamDBModel.FK_tbl_urunler_tbl_kategoriler" />
+        <AssociationConnector Association="HayyamDBModel.FK_tbl_personelactions_tbl_personeller" />
+        <AssociationConnector Association="HayyamDBModel.FK_tbl_personeller_tbl_personelgorevleri" />
+        <AssociationConnector Association="HayyamDBModel.FK_tbl_satislar_tbl_urunler" />
+        <AssociationConnector Association="HayyamDBModel.FK_tbl_rezervasyonlar_tbl_masalar" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

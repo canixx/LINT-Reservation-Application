@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{874DF88C-C3A5-434D-96F9-7FD485400383}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LintReservation.App</RootNamespace>
+    <AssemblyName>LintReservation.App</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccount.Designer.cs">
+      <DependentUpon>frmAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettings.Designer.cs">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBill.Designer.cs">
+      <DependentUpon>frmBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFirst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFirst.Designer.cs">
+      <DependentUpon>frmFirst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTables.Designer.cs">
+      <DependentUpon>frmTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomers.Designer.cs">
+      <DependentUpon>frmCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKitchen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKitchen.Designer.cs">
+      <DependentUpon>frmKitchen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReports.Designer.cs">
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReservations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReservations.Designer.cs">
+      <DependentUpon>frmReservations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrder.Designer.cs">
+      <DependentUpon>frmOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAccount.resx">
+      <DependentUpon>frmAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSettings.resx">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBill.resx">
+      <DependentUpon>frmBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFirst.resx">
+      <DependentUpon>frmFirst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTables.resx">
+      <DependentUpon>frmTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomers.resx">
+      <DependentUpon>frmCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKitchen.resx">
+      <DependentUpon>frmKitchen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReports.resx">
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReservations.resx">
+      <DependentUpon>frmReservations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrder.resx">
+      <DependentUpon>frmOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c95b198982b8d8ff68275722e8c03e81_1525264260.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22729062_10155985009600116_7804547855628807255_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-button-png-4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-button-png-41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exiticon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-icons-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-icons-201.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgimage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\masalar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\masalar11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adsız.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adsız1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rezervasyon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rezervasyon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Musteriler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hesap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kitchen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hesap1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report-icon-png-3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kilit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgimagetable.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon-Visitor-Return-300x300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MasalarAçıkRezerve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MasalarDolu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MasalarRezervasyon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Masalar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAnaYemekler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAraSıcaklar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnSalatalar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnMezeler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnİçkiler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAperatif.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnödeme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnsipariş.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btniptal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YeniProfil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YeniProfil1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backimage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Return.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+    <None Include="Resources\SSSS.png" />
+    <None Include="Resources\newEMP.jpg" />
+    <None Include="Resources\changing.jpg" />
+    <None Include="Resources\deleteP.jpg" />
+    <None Include="Resources\findP.jpg" />
+    <None Include="Resources\changingP.jpg" />
+    <None Include="Resources\addP.png" />
+    <None Include="Resources\RETUERNREZ.jpg" />
+    <None Include="Resources\newcustomer.png" />
+    <None Include="Resources\create reservat.png" />
+    <None Include="Resources\ALLPRODUCTS.png" />
+    <None Include="Resources\CLOSEORDER.jpg" />
+    <None Include="Resources\Checkbill.jpg" />
+    <None Include="Resources\dollars.png" />
+    <None Include="Resources\payment.png" />
+    <None Include="Resources\orders.png" />
+    <None Include="Resources\appedizers.png" />
+    <None Include="Resources\snacks.png" />
+    <None Include="Resources\salads.png" />
+    <None Include="Resources\maindishes.png" />
+    <None Include="Resources\intermadiatedishes.png" />
+    <None Include="Resources\boozes.png" />
+    <None Include="Resources\tabless.jpg" />
+    <None Include="Resources\exitsss.jpg" />
+    <None Include="Resources\exitss.jpg" />
+    <None Include="Resources\Reservation.jpg" />
+    <None Include="Resources\customers.png" />
+    <None Include="Resources\bgimagetable2.jpg" />
+    <None Include="Resources\menuimage_11.jpg" />
+    <None Include="Resources\logokitchen1.png" />
+    <None Include="Resources\bgimagetable1.jpg" />
+    <None Include="Resources\tableslogo1.png" />
+    <None Include="Resources\logo1.PNG" />
+    <None Include="Resources\Raporlar.jpg" />
+    <None Include="Resources\Musteriler - Kopya.png" />
+    <None Include="Resources\Return - Kopya %282%29.png" />
+    <None Include="Resources\Return - Kopya.png" />
+    <None Include="Resources\Rezervasyonlar.png" />
+    <None Include="Resources\rezervasyon2.png" />
+    <None Include="Resources\backimageforRezervasyon.jpg" />
+    <None Include="Resources\btntümürünler.png" />
+    <None Include="Resources\backimageayarlar1.png" />
+    <None Include="Resources\raporlarbackimage.jpg" />
+    <None Include="Resources\BUL1.png" />
+    <None Include="Resources\BUL.png" />
+    <None Include="Resources\ekle.jpg" />
+    <None Include="Resources\Değiştir1.png" />
+    <None Include="Resources\btnSil1.png" />
+    <None Include="Resources\backimagemutfak.jpg" />
+    <None Include="Resources\btnSil.png" />
+    <None Include="Resources\btnSave.png" />
+    <None Include="Resources\btnYeni.png" />
+    <None Include="Resources\Değiştir.png" />
+    <None Include="Resources\backimageayarlar.png" />
+    <None Include="Resources\müsterigüncelle.png" />
+    <None Include="Resources\Searchbtn - Kopya.png" />
+    <None Include="Resources\btnsipariş - Kopya.png" />
+    <None Include="Resources\müşteriseç.png" />
+    <None Include="Resources\YeniProfil2.png" />
+    <None Include="Resources\backimageformusteri.jpg" />
+    <None Include="Resources\ödemebill.png" />
+    <None Include="Resources\Searchbtn.png" />
+    <None Include="Resources\FaturaBackİmage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LintReservation.BLL\LintReservation.BLL.csproj">
+      <Project>{d169be4c-c8fb-4916-9be8-ced8fc3608a8}</Project>
+      <Name>LintReservation.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LintReservation.DAL\LintReservation.DAL.csproj">
+      <Project>{fadf3183-3850-4c06-8bae-531c8b624beb}</Project>
+      <Name>LintReservation.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LintReservation.MODEL\LintReservation.MODEL.csproj">
+      <Project>{17e3757a-7002-4595-8702-d22b79d13180}</Project>
+      <Name>LintReservation.MODEL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LintReservationCustomControls\LintReservationCustomControls.csproj">
+      <Project>{413997d6-5ac1-48d8-913e-bd6478c7321e}</Project>
+      <Name>LintReservationCustomControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ActionButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ActionButton - Kopya.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
+</Project>

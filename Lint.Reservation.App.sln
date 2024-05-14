@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LintReservation.BLL", "LintReservation.BLL\LintReservation.BLL.csproj", "{D169BE4C-C8FB-4916-9BE8-CED8FC3608A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LintReservation.DAL", "LintReservation.DAL\LintReservation.DAL.csproj", "{FADF3183-3850-4C06-8BAE-531C8B624BEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LintReservation.MODEL", "LintReservation.MODEL\LintReservation.MODEL.csproj", "{17E3757A-7002-4595-8702-D22B79D13180}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LintReservationCustomControls", "LintReservationCustomControls\LintReservationCustomControls.csproj", "{413997D6-5AC1-48D8-913E-BD6478C7321E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lint.Reservation.App", "Lint.Reservation.App\Lint.Reservation.App.csproj", "{874DF88C-C3A5-434D-96F9-7FD485400383}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D169BE4C-C8FB-4916-9BE8-CED8FC3608A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D169BE4C-C8FB-4916-9BE8-CED8FC3608A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D169BE4C-C8FB-4916-9BE8-CED8FC3608A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D169BE4C-C8FB-4916-9BE8-CED8FC3608A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FADF3183-3850-4C06-8BAE-531C8B624BEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FADF3183-3850-4C06-8BAE-531C8B624BEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FADF3183-3850-4C06-8BAE-531C8B624BEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FADF3183-3850-4C06-8BAE-531C8B624BEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17E3757A-7002-4595-8702-D22B79D13180}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17E3757A-7002-4595-8702-D22B79D13180}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17E3757A-7002-4595-8702-D22B79D13180}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17E3757A-7002-4595-8702-D22B79D13180}.Release|Any CPU.Build.0 = Release|Any CPU
+		{413997D6-5AC1-48D8-913E-BD6478C7321E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{413997D6-5AC1-48D8-913E-BD6478C7321E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{413997D6-5AC1-48D8-913E-BD6478C7321E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{413997D6-5AC1-48D8-913E-BD6478C7321E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{874DF88C-C3A5-434D-96F9-7FD485400383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{874DF88C-C3A5-434D-96F9-7FD485400383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{874DF88C-C3A5-434D-96F9-7FD485400383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{874DF88C-C3A5-434D-96F9-7FD485400383}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4CCAB18-BC80-487F-B0B4-DAE522B65459}
+	EndGlobalSection
+EndGlobal
